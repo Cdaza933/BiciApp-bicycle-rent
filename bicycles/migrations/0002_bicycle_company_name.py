@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='bicycles',
+            model_name='bicycle',
             name='company_name',
             field=models.CharField(default='defoult', max_length=255),
             preserve_default=False,
