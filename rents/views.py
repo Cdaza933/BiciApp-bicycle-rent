@@ -15,7 +15,7 @@ class RentBicycle(APIView):
     def post(self, request, format=None):
         data = request.data
         bicycle = Bicycle.objects.get(pk=data.pop('bicycle_id'))
-        data['bicycle'] = bicycle
+        data['bicycles'] = bicycle
         rent = Rent.objects.create(**data)
         return Response(rent.pk, status=status.HTTP_201_CREATED)
 

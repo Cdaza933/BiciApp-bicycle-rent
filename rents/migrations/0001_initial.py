@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('user_id', models.CharField(max_length=255)),
                 ('rented_at', models.DateTimeField(auto_now_add=True)),
                 ('rented_ended_at', models.DateTimeField(blank=True, null=True)),
-                ('bicycle', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bicycles.Bicycle')),
+                ('bicycles', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bicycles.Bicycle')),
             ],
         ),
         migrations.CreateModel(

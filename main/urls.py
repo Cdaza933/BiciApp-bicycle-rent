@@ -22,3 +22,4 @@ urlpatterns = [
     url(r'^api/bicycle/', include('bicycles.urls')),
     url(r'^api/rent/', include('rents.urls')),
 ]
+# Static files (CSS, JavaScript, Images)
