@@ -132,3 +132,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR + "/"
+
+# heroku workaround (codeship)
+if '/app' in os.environ['HOME']:
+    import django_heroku
+    django_heroku.settings(locals())
